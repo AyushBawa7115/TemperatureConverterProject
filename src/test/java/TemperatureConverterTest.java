@@ -19,4 +19,10 @@ public class TemperatureConverterTest {
 
         assertEquals(100.0, actual, 0.001);
     }
+    @Test
+    void testCelsiusToKelvin() {
+        double actual = converter.celsiusToKelvin(0.0);
+
+        assertEquals(273.15, actual, 0.001);
+    }
 }
